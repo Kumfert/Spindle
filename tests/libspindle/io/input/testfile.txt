@@ -1,0 +1,15 @@
+//
+// ex1.cc -- tests pfstream's  (piped file streams)
+//
+
+#include <iostream.h>
+#include <pfstream.h>
+
+main() {
+  
+  ipfstream instr("gunzip -c testfile.txt.gz |");
+
+  char ch;
+  while(instr.get(ch)) cout.put(ch);
+
+}

@@ -1,0 +1,8 @@
+Size of PermutationMap class = 44
+According to the registry it is = 44
+This perm object is serial #0
+The second PermutationMap object has serial #1
+Destroying Registry... PersistanceRegistery::dump():  3 items
+             PermutationMap (44) 2/2---> SpindlePersistant
+           SpindleBaseClass (8) 2/2---> 
+          SpindlePersistant (12) 2/2---> SpindleBaseClass

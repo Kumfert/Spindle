@@ -1,0 +1,370 @@
+# Makefile.in generated automatically by automake 1.4 from Makefile.am
+
+# Copyright (C) 1994, 1995-8, 1999 Free Software Foundation, Inc.
+# This Makefile.in is free software; the Free Software Foundation
+# gives unlimited permission to copy and/or distribute it,
+# with or without modifications, as long as this notice is preserved.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY, to the extent permitted by law; without
+# even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+
+SHELL = @SHELL@
+
+srcdir = @srcdir@
+top_srcdir = @top_srcdir@
+VPATH = @srcdir@
+prefix = @prefix@
+exec_prefix = @exec_prefix@
+
+bindir = @bindir@
+sbindir = @sbindir@
+libexecdir = @libexecdir@
+datadir = @datadir@
+sysconfdir = @sysconfdir@
+sharedstatedir = @sharedstatedir@
+localstatedir = @localstatedir@
+libdir = @libdir@
+infodir = @infodir@
+mandir = @mandir@
+includedir = @includedir@
+oldincludedir = /usr/include
+
+DESTDIR =
+
+pkgdatadir = $(datadir)/@PACKAGE@
+pkglibdir = $(libdir)/@PACKAGE@
+pkgincludedir = $(includedir)/@PACKAGE@
+
+top_builddir = ../../..
+
+ACLOCAL = @ACLOCAL@
+AUTOCONF = @AUTOCONF@
+AUTOMAKE = @AUTOMAKE@
+AUTOHEADER = @AUTOHEADER@
+
+INSTALL = @INSTALL@
+INSTALL_PROGRAM = @INSTALL_PROGRAM@ $(AM_INSTALL_PROGRAM_FLAGS)
+INSTALL_DATA = @INSTALL_DATA@
+INSTALL_SCRIPT = @INSTALL_SCRIPT@
+transform = @program_transform_name@
+
+NORMAL_INSTALL = :
+PRE_INSTALL = :
+POST_INSTALL = :
+NORMAL_UNINSTALL = :
+PRE_UNINSTALL = :
+POST_UNINSTALL = :
+build_alias = @build_alias@
+build_triplet = @build@
+host_alias = @host_alias@
+host_triplet = @host@
+target_alias = @target_alias@
+target_triplet = @target@
+BUNZIP = @BUNZIP@
+BZIP = @BZIP@
+CC = @CC@
+COMPRESS = @COMPRESS@
+CPP = @CPP@
+CXX = @CXX@
+GUNZIP = @GUNZIP@
+GZIP = @GZIP@
+LN_S = @LN_S@
+MAKEINFO = @MAKEINFO@
+OPTIONALINCLUDES = @OPTIONALINCLUDES@
+OPTIONALSAMPLES = @OPTIONALSAMPLES@
+PACKAGE = @PACKAGE@
+PERL = @PERL@
+PKUNZIP = @PKUNZIP@
+PKZIP = @PKZIP@
+RANLIB = @RANLIB@
+TEMPLATE_OBJS = @TEMPLATE_OBJS@
+UNCOMPRESS = @UNCOMPRESS@
+VERSION = @VERSION@
+amdbarlib = @amdbarlib@
+builddir = @builddir@
+genmmdlib = @genmmdlib@
+spooleslib = @spooleslib@
+
+check_PROGRAMS = test01.exe test02.exe test03.exe test04.exe test05.exe test06.exe test06b.exe test07.exe test08.exe
+# test06b.exe
+
+test01_exe_SOURCES = test01.cc
+test02_exe_SOURCES = test02.cc
+test03_exe_SOURCES = test03.cc
+test04_exe_SOURCES = test04.cc
+test05_exe_SOURCES = test05.cc
+test06_exe_SOURCES = test06.cc
+test06b_exe_SOURCES = test06b.cc
+test07_exe_SOURCES = test07.cc
+test08_exe_SOURCES = test08.cc
+
+EXTRA_DIST = $(check_PROGRAMS:.exe=.out) old_unit.sh
+
+LIBS = ../../../libspindle/libspindle.a
+INCLUDES = -I$(top_srcdir)/include
+mkinstalldirs = $(SHELL) $(top_srcdir)/mkinstalldirs
+CONFIG_HEADER = ../../../spindle_config.h
+CONFIG_CLEAN_FILES = 
+
+DEFS = @DEFS@ -I. -I$(srcdir) -I../../..
+CPPFLAGS = @CPPFLAGS@
+LDFLAGS = @LDFLAGS@
+test01_exe_OBJECTS =  test01.o
+test01_exe_LDADD = $(LDADD)
+test01_exe_DEPENDENCIES = 
+test01_exe_LDFLAGS = 
+test02_exe_OBJECTS =  test02.o
+test02_exe_LDADD = $(LDADD)
+test02_exe_DEPENDENCIES = 
+test02_exe_LDFLAGS = 
+test03_exe_OBJECTS =  test03.o
+test03_exe_LDADD = $(LDADD)
+test03_exe_DEPENDENCIES = 
+test03_exe_LDFLAGS = 
+test04_exe_OBJECTS =  test04.o
+test04_exe_LDADD = $(LDADD)
+test04_exe_DEPENDENCIES = 
+test04_exe_LDFLAGS = 
+test05_exe_OBJECTS =  test05.o
+test05_exe_LDADD = $(LDADD)
+test05_exe_DEPENDENCIES = 
+test05_exe_LDFLAGS = 
+test06_exe_OBJECTS =  test06.o
+test06_exe_LDADD = $(LDADD)
+test06_exe_DEPENDENCIES = 
+test06_exe_LDFLAGS = 
+test06b_exe_OBJECTS =  test06b.o
+test06b_exe_LDADD = $(LDADD)
+test06b_exe_DEPENDENCIES = 
+test06b_exe_LDFLAGS = 
+test07_exe_OBJECTS =  test07.o
+test07_exe_LDADD = $(LDADD)
+test07_exe_DEPENDENCIES = 
+test07_exe_LDFLAGS = 
+test08_exe_OBJECTS =  test08.o
+test08_exe_LDADD = $(LDADD)
+test08_exe_DEPENDENCIES = 
+test08_exe_LDFLAGS = 
+CXXFLAGS = @CXXFLAGS@
+CXXCOMPILE = $(CXX) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS)
+CXXLD = $(CXX)
+CXXLINK = $(CXXLD) $(AM_CXXFLAGS) $(CXXFLAGS) $(LDFLAGS) -o $@
+DIST_COMMON =  Makefile.am Makefile.in
+
+
+DISTFILES = $(DIST_COMMON) $(SOURCES) $(HEADERS) $(TEXINFOS) $(EXTRA_DIST)
+
+TAR = gtar
+GZIP_ENV = --best
+SOURCES = $(test01_exe_SOURCES) $(test02_exe_SOURCES) $(test03_exe_SOURCES) $(test04_exe_SOURCES) $(test05_exe_SOURCES) $(test06_exe_SOURCES) $(test06b_exe_SOURCES) $(test07_exe_SOURCES) $(test08_exe_SOURCES)
+OBJECTS = $(test01_exe_OBJECTS) $(test02_exe_OBJECTS) $(test03_exe_OBJECTS) $(test04_exe_OBJECTS) $(test05_exe_OBJECTS) $(test06_exe_OBJECTS) $(test06b_exe_OBJECTS) $(test07_exe_OBJECTS) $(test08_exe_OBJECTS)
+
+all: all-redirect
+.SUFFIXES:
+.SUFFIXES: .S .c .cc .o .s
+$(srcdir)/Makefile.in: Makefile.am $(top_srcdir)/configure.in $(ACLOCAL_M4) 
+	cd $(top_srcdir) && $(AUTOMAKE) --gnu --include-deps tests/libspindle/io/Makefile
+
+Makefile: $(srcdir)/Makefile.in  $(top_builddir)/config.status
+	cd $(top_builddir) \
+	  && CONFIG_FILES=$(subdir)/$@ CONFIG_HEADERS= $(SHELL) ./config.status
+
+
+mostlyclean-checkPROGRAMS:
+
+clean-checkPROGRAMS:
+	-test -z "$(check_PROGRAMS)" || rm -f $(check_PROGRAMS)
+
+distclean-checkPROGRAMS:
+
+maintainer-clean-checkPROGRAMS:
+
+.c.o:
+	$(COMPILE) -c $<
+
+.s.o:
+	$(COMPILE) -c $<
+
+.S.o:
+	$(COMPILE) -c $<
+
+mostlyclean-compile:
+	-rm -f *.o core *.core
+
+clean-compile:
+
+distclean-compile:
+	-rm -f *.tab.c
+
+maintainer-clean-compile:
+
+test01.exe: $(test01_exe_OBJECTS) $(test01_exe_DEPENDENCIES)
+	@rm -f test01.exe
+	$(CXXLINK) $(test01_exe_LDFLAGS) $(test01_exe_OBJECTS) $(test01_exe_LDADD) $(LIBS)
+
+test02.exe: $(test02_exe_OBJECTS) $(test02_exe_DEPENDENCIES)
+	@rm -f test02.exe
+	$(CXXLINK) $(test02_exe_LDFLAGS) $(test02_exe_OBJECTS) $(test02_exe_LDADD) $(LIBS)
+
+test03.exe: $(test03_exe_OBJECTS) $(test03_exe_DEPENDENCIES)
+	@rm -f test03.exe
+	$(CXXLINK) $(test03_exe_LDFLAGS) $(test03_exe_OBJECTS) $(test03_exe_LDADD) $(LIBS)
+
+test04.exe: $(test04_exe_OBJECTS) $(test04_exe_DEPENDENCIES)
+	@rm -f test04.exe
+	$(CXXLINK) $(test04_exe_LDFLAGS) $(test04_exe_OBJECTS) $(test04_exe_LDADD) $(LIBS)
+
+test05.exe: $(test05_exe_OBJECTS) $(test05_exe_DEPENDENCIES)
+	@rm -f test05.exe
+	$(CXXLINK) $(test05_exe_LDFLAGS) $(test05_exe_OBJECTS) $(test05_exe_LDADD) $(LIBS)
+
+test06.exe: $(test06_exe_OBJECTS) $(test06_exe_DEPENDENCIES)
+	@rm -f test06.exe
+	$(CXXLINK) $(test06_exe_LDFLAGS) $(test06_exe_OBJECTS) $(test06_exe_LDADD) $(LIBS)
+
+test06b.exe: $(test06b_exe_OBJECTS) $(test06b_exe_DEPENDENCIES)
+	@rm -f test06b.exe
+	$(CXXLINK) $(test06b_exe_LDFLAGS) $(test06b_exe_OBJECTS) $(test06b_exe_LDADD) $(LIBS)
+
+test07.exe: $(test07_exe_OBJECTS) $(test07_exe_DEPENDENCIES)
+	@rm -f test07.exe
+	$(CXXLINK) $(test07_exe_LDFLAGS) $(test07_exe_OBJECTS) $(test07_exe_LDADD) $(LIBS)
+
+test08.exe: $(test08_exe_OBJECTS) $(test08_exe_DEPENDENCIES)
+	@rm -f test08.exe
+	$(CXXLINK) $(test08_exe_LDFLAGS) $(test08_exe_OBJECTS) $(test08_exe_LDADD) $(LIBS)
+.cc.o:
+	$(CXXCOMPILE) -c $<
+
+tags: TAGS
+
+ID: $(HEADERS) $(SOURCES) $(LISP)
+	list='$(SOURCES) $(HEADERS)'; \
+	unique=`for i in $$list; do echo $$i; done | \
+	  awk '    { files[$$0] = 1; } \
+	       END { for (i in files) print i; }'`; \
+	here=`pwd` && cd $(srcdir) \
+	  && mkid -f$$here/ID $$unique $(LISP)
+
+TAGS:  $(HEADERS) $(SOURCES)  $(TAGS_DEPENDENCIES) $(LISP)
+	tags=; \
+	here=`pwd`; \
+	list='$(SOURCES) $(HEADERS)'; \
+	unique=`for i in $$list; do echo $$i; done | \
+	  awk '    { files[$$0] = 1; } \
+	       END { for (i in files) print i; }'`; \
+	test -z "$(ETAGS_ARGS)$$unique$(LISP)$$tags" \
+	  || (cd $(srcdir) && etags $(ETAGS_ARGS) $$tags  $$unique $(LISP) -o $$here/TAGS)
+
+mostlyclean-tags:
+
+clean-tags:
+
+distclean-tags:
+	-rm -f TAGS ID
+
+maintainer-clean-tags:
+
+distdir = $(top_builddir)/$(PACKAGE)-$(VERSION)/$(subdir)
+
+subdir = tests/libspindle/io
+
+distdir: $(DISTFILES)
+	@for file in $(DISTFILES); do \
+	  d=$(srcdir); \
+	  if test -d $$d/$$file; then \
+	    cp -pr $$/$$file $(distdir)/$$file; \
+	  else \
+	    test -f $(distdir)/$$file \
+	    || ln $$d/$$file $(distdir)/$$file 2> /dev/null \
+	    || cp -p $$d/$$file $(distdir)/$$file || :; \
+	  fi; \
+	done
+	$(MAKE) $(AM_MAKEFLAGS) top_distdir="$(top_distdir)" distdir="$(distdir)" dist-hook
+info-am:
+info: info-am
+dvi-am:
+dvi: dvi-am
+check-am: all-am
+	$(MAKE) $(AM_MAKEFLAGS) $(check_PROGRAMS)
+check: check-am
+installcheck-am:
+installcheck: installcheck-am
+install-exec-am:
+install-exec: install-exec-am
+
+install-data-am:
+install-data: install-data-am
+
+install-am: all-am
+	@$(MAKE) $(AM_MAKEFLAGS) install-exec-am install-data-am
+install: install-am
+uninstall-am:
+uninstall: uninstall-am
+all-am: Makefile
+all-redirect: all-am
+install-strip:
+	$(MAKE) $(AM_MAKEFLAGS) AM_INSTALL_PROGRAM_FLAGS=-s install
+installdirs:
+
+
+mostlyclean-generic:
+
+clean-generic:
+
+distclean-generic:
+	-rm -f Makefile $(CONFIG_CLEAN_FILES)
+	-rm -f config.cache config.log stamp-h stamp-h[0-9]*
+
+maintainer-clean-generic:
+mostlyclean-am:  mostlyclean-checkPROGRAMS mostlyclean-compile \
+		mostlyclean-tags mostlyclean-generic
+
+mostlyclean: mostlyclean-am
+
+clean-am:  clean-checkPROGRAMS clean-compile clean-tags clean-generic \
+		mostlyclean-am
+
+clean: clean-am
+
+distclean-am:  distclean-checkPROGRAMS distclean-compile distclean-tags \
+		distclean-generic clean-am
+
+distclean: distclean-am
+
+maintainer-clean-am:  maintainer-clean-checkPROGRAMS \
+		maintainer-clean-compile maintainer-clean-tags \
+		maintainer-clean-generic distclean-am
+	@echo "This command is intended for maintainers to use;"
+	@echo "it deletes files that may require special tools to rebuild."
+
+maintainer-clean: maintainer-clean-am
+
+.PHONY: mostlyclean-checkPROGRAMS distclean-checkPROGRAMS \
+clean-checkPROGRAMS maintainer-clean-checkPROGRAMS mostlyclean-compile \
+distclean-compile clean-compile maintainer-clean-compile tags \
+mostlyclean-tags distclean-tags clean-tags maintainer-clean-tags \
+distdir info-am info dvi-am dvi check check-am installcheck-am \
+installcheck install-exec-am install-exec install-data-am install-data \
+install-am install uninstall-am uninstall all-redirect all-am all \
+installdirs mostlyclean-generic distclean-generic clean-generic \
+maintainer-clean-generic clean mostlyclean distclean maintainer-clean
+
+
+dist-hook:
+	d="$(distdir)/tempout"; \
+	test -x $$d \
+	|| mkdir -p $$d \
+	|| exit 1; \
+	d="$(distdir)/input"; \
+	test -x $$d \
+	|| mkdir -p $$d \
+	|| exit 1; \
+	cp -p $(srcdir)/input/*.* $$d/; 
+
+# Tell versions [3.59,3.63) of GNU make to not export all variables.
+# Otherwise a system limit (for SysV at least) may be exceeded.
+.NOEXPORT:

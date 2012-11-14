@@ -1,0 +1,6 @@
+Permutation:3 4 2 0 1 
+Destroying Registry... PersistanceRegistery::dump():  4 items
+             SpindleBaseClass (8) 4/4---> 
+                  SpindleFile (20) 2/2---> SpindleBaseClass
+            SpindlePersistant (12) 2/2---> SpindleBaseClass
+                Permutation (44) 2/2---> SpindlePersistant

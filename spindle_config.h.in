@@ -1,0 +1,189 @@
+/* spindle_config.h.in.  Generated automatically from configure.in by autoheader.  */
+
+/* Define to empty if the keyword does not work.  */
+#undef const
+
+/* Define if you don't have vprintf but do have _doprnt.  */
+#undef HAVE_DOPRNT
+
+/* Define if you have the vprintf function.  */
+#undef HAVE_VPRINTF
+
+/* Define as __inline if that's what the C compiler calls it.  */
+#undef inline
+
+/* Define to `unsigned' if <sys/types.h> doesn't define.  */
+#undef size_t
+
+/* Define if you have the ANSI C header files.  */
+#undef STDC_HEADERS
+
+/* Define if you can safely include both <sys/time.h> and <time.h>.  */
+#undef TIME_WITH_SYS_TIME
+
+/* Define if your processor stores words with the most significant
+   byte first (like Motorola and SPARC, unlike Intel and VAX).  */
+#undef WORDS_BIGENDIAN
+
+/* Define if you have the <alloc.h> header file.  */
+#undef HAVE_ALLOC_H
+
+/* Define if you have the <dirent.h> header file.  */
+#undef HAVE_DIRENT_H
+
+/* Define if you have the <limits.h> header file.  */
+#undef HAVE_LIMITS_H
+
+/* Define if you have the <ndir.h> header file.  */
+#undef HAVE_NDIR_H
+
+/* Define if you have the <strings.h> header file.  */
+#undef HAVE_STRINGS_H
+
+/* Define if you have the <sys/dir.h> header file.  */
+#undef HAVE_SYS_DIR_H
+
+/* Define if you have the <sys/ndir.h> header file.  */
+#undef HAVE_SYS_NDIR_H
+
+/* Define if you have the <sys/time.h> header file.  */
+#undef HAVE_SYS_TIME_H
+
+/* Define if you have the <sys/times.h> header file.  */
+#undef HAVE_SYS_TIMES_H
+
+/* Define if you have the <unistd.h> header file.  */
+#undef HAVE_UNISTD_H
+
+/* Name of package */
+#undef PACKAGE
+
+/* Version number of package */
+#undef VERSION
+
+/* define to disable internal timers (see stopwatch.h) */
+#undef DISABLE_STOPWATCH
+
+/* define if C++ requires old .h-style header includes */
+#undef REQUIRE_OLD_CXX_HEADER_SUFFIX
+
+/* define if the compiler implements namespaces */
+#undef HAVE_NAMESPACES
+
+/* define if the compiler supports ISO C++ standard library */
+#undef HAVE_STD
+
+/* define if the compiler supports Standard Template Library */
+#undef HAVE_STL
+
+/* define if bool is a built-in type */
+#undef HAVE_BOOL
+
+/* define if the compiler supports const_cast<> */
+#undef HAVE_CONST_CAST
+
+/* define if the compiler supports dynamic_cast<> */
+#undef HAVE_DYNAMIC_CAST
+
+/* define if the compiler supports reinterpret_cast<> */
+#undef HAVE_REINTERPRET_CAST
+
+/* define if the compiler supports static_cast<> */
+#undef HAVE_STATIC_CAST
+
+/* define if the compiler supports the mutable keyword */
+#undef HAVE_MUTABLE
+
+/* define if the compiler implements namespaces */
+#undef HAVE_NAMESPACES
+
+/* define if the compiler recognizes typename */
+#undef HAVE_TYPENAME
+
+/* define if the compiler supports exceptions */
+#undef HAVE_EXCEPTIONS
+
+/* define if the compiler supports the explicit keyword */
+#undef HAVE_EXPLICIT
+
+/* define if the compiler handle computations inside an enum */
+#undef HAVE_ENUM_COMPUTATIONS
+
+/* define if the compiler handles (int) casts in enum computations */
+#undef HAVE_ENUM_COMPUTATIONS_WITH_CAST
+
+/* define if the compiler has numeric_limits<T> */
+#undef HAVE_NUMERIC_LIMITS
+
+/* define if complex math functions are in std:: */
+#undef HAVE_COMPLEX_MATH_IN_NAMESPACE_STD
+
+/* define if the compiler has complex<T> */
+#undef HAVE_COMPLEX
+
+/* define if the compiler has complex math functions */
+#undef HAVE_COMPLEX_MATH1
+
+/* define if the compiler has more complex math functions */
+#undef HAVE_COMPLEX_MATH2
+
+/* define if the compiler supports IEEE math library */
+#undef HAVE_IEEE_MATH
+
+/* define if the compiler supports basic templates */
+#undef HAVE_TEMPLATES
+
+/* define if the compiler supports templates as template arguments */
+#undef HAVE_TEMPLATES_AS_TEMPLATE_ARGUMENTS
+
+/* define if the compiler supports default template parameters */
+#undef HAVE_DEFAULT_TEMPLATE_PARAMETERS
+
+/* define if the compiler supports use of the template keyword as a qualifier */
+#undef HAVE_TEMPLATE_KEYWORD_QUALIFIER
+
+/* define if the compiler supports explicit template function qualification */
+#undef HAVE_EXPLICIT_TEMPLATE_FUNCTION_QUALIFICATION
+
+/* define if the compiler supports template-qualified base class specifiers */
+#undef HAVE_TEMPLATE_QUALIFIED_BASE_CLASS
+
+/* define if the compiler supports template-qualified return types */
+#undef HAVE_TEMPLATE_QUALIFIED_RETURN_TYPE
+
+/* define if the compiler supports member templates */
+#undef HAVE_MEMBER_TEMPLATES
+
+/* define if the compiler supports member templates outside the class declaration */
+#undef HAVE_MEMBER_TEMPLATES_OUTSIDE_CLASS
+
+/* define if the compiler supports function matching with argument types which are template scope-qualified */
+#undef HAVE_TEMPLATE_SCOPED_ARGUMENT_MATCHING
+
+/* define to explicit path to compress binary, if available */
+#undef COMPRESS
+
+/* define to explicit path to uncompress binary, if available */
+#undef UNCOMPRESS
+
+/* define to explicit path to gzip binary, if available */
+#undef GZIP
+
+/* define to explicit path to gunzip binary, if available */
+#undef GUNZIP
+
+/* define to explicit path to pkzip binary, if available */
+#undef PKZIP
+
+/* define to explicit path to pkunzip binary, if available */
+#undef PKUNZIP
+
+/* define to explicit path to bzip2 binary, if available */
+#undef BZIP2
+
+/* define to explicit path to bunzip binary2, if available */
+#undef BUNZIP2
+
+/* define if drand48() is available */
+#undef HAVE_FUNCTION_DRAND48
+

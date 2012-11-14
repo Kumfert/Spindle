@@ -1,0 +1,63 @@
+::README.txt
+
+
+SPINDLE -- Ordering Algorithms for Sparse Matrices
+
+     version Beta 2.5  19 August 1999
+
+	Gary Kumfert, Old Dominion University
+        Copyright(c) 1999, Old Dominion University.  All rights reserved.
+
+Send comments, bug fixes, etc. to <kumfert@cs.odu.edu>
+
+====================================================================
+
+Copyright Notice:
+
+//  Gary Kumfert, Old Dominion University
+//  Copyright(c) 1999, Old Dominion University.  All rights reserved.
+// 
+//  Permission to use, copy, modify, distribute and sell this software and
+//  its documentation for any purpose is hereby granted without fee, 
+//  provided that the above copyright notice appear in all copies and
+//  that both that copyright notice and this permission notice appear
+//  in supporting documentation.  Old Dominion University makes no
+//  representations about the suitability of this software for any 
+//  purpose.  It is provided "as is" without express or implied warranty.
+
+====================================================================
+
+This package of software is the PhD dissertation project of
+Gary Kumfert at Old Dominion Univeristy.  For more information
+about the algorithms implemented herein, check out
+
+	Gary's Homepage 	     http://www.cs.odu.edu/~kumfert/research.html
+
+	His Advisor, Alex Pothen's   http://www.cs.odu.edu/~pothen
+
+	Or the ODU-Sparse Homepage   http://www.cs.odu.edu/~sparse
+
+	Kumfert. An Object-Oriented Algorithmic Laboratory for
+	Ordering Sparse Matrices. PhD Thesis. (DRAFT) 1999 Old Dominion University.
+
+	Kumfert and Pothen.  Polymorphic Fill-Reducing Orderings (In Progress)
+
+	Dobrian, Kumfert and Pothen.  Sparse Direct Solvers Using Object-Oriented 
+	Methods</EM> (to appear). In Modern Software Tools in Scientfic Computing,
+	Ed. A. M. Bruaset et. al. Springer-Verlag (expected 1999)
+
+	Kumfert and Pothen.  An Object-Oriented Collection of Minimum Degree 
+	Algorithms: Design, Implementation, and Experiences.  Computing in 
+	Object-Oriented Parallel Environments, Ed. D. Caromel et. al.
+	LNCS 1505, Springer-Verlag. (1998) pp. 95-106.
+
+	Dobrian, Kumfert, and Pothen.  Object-Oriented Design of Sparse Direct Solvers
+	Computing in Object-Oriented Parallel Environments, Ed. D. Caromel et. al.
+	LNCS 1505, Springer-Verlag. (1998) pp. 207-214.
+
+	Kumfert and Pothen.  Two Improved Algorithms for Envelope and Wavefront 
+	Reduction. BIT 37:3 (1997) pp.559-590
+
+
+
+

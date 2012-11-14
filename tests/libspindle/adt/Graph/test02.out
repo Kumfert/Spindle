@@ -1,0 +1,45 @@
+Graph created successfully.
+
+Graph::dump() {
+   className    = Graph
+   classSize    = 88
+   idNumber     = 0
+   currentState = VALID
+   nVtxs        = 9
+   nEdges       = 12
+   nBoundVtxs   = 0
+   nCutEdges    = 0
+   nNonZeros    = 24
+   vtxWeights?  = No
+   edgeWeights? = No
+}
+Testing the adjacency iterators over the graph
+adj(0) :1, 3, 
+adj(1) :0, 2, 4, 
+adj(2) :1, 5, 
+adj(3) :0, 4, 6, 
+adj(4) :1, 3, 5, 7, 
+adj(5) :2, 4, 8, 
+adj(6) :3, 7, 
+adj(7) :4, 6, 8, 
+adj(8) :5, 7, 
+Testing the high adjacency iterators over the graph
+hadj(0) :1, 3, 
+hadj(1) :2, 4, 
+hadj(2) :5, 
+hadj(3) :4, 6, 
+hadj(4) :5, 7, 
+hadj(5) :8, 
+hadj(6) :7, 
+hadj(7) :8, 
+hadj(8) :
+Testing the low adjacency iterators over the graph
+ladj(0) :
+ladj(1) :0, 
+ladj(2) :1, 
+ladj(3) :0, 
+ladj(4) :1, 3, 
+ladj(5) :2, 4, 
+ladj(6) :3, 
+ladj(7) :4, 6, 
+ladj(8) :5, 7, 

@@ -1,0 +1,15 @@
+For unordered graph: 
+     Size of the factor     = 29
+     Size of fill           = 8
+     Amount of work (flops) = 114
+
+For permuted graph: 
+     Size of the factor     = 26
+     Size of fill           = 5
+     Amount of work (flops) = 90
+
+For graph with etree: 
+     Size of the factor     = 26
+     Size of fill           = 5
+     Amount of work (flops) = 90
+

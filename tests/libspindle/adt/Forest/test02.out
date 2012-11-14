@@ -1,0 +1,57 @@
+A tree created straight from a parent-pointer
+------ begin forest (preorder) 1 tree(s) ----- 
+    8
+        0
+            4
+                5
+                    14
+                6
+                12
+                13
+        1
+            7
+            9
+            10
+                2
+                    11
+                3
+------  end  forest (preorder) ----- 
+  Prune new tree at 7... Pass
+  Prune new tree at 5... Pass
+  Prune new tree at 2... Pass
+------ begin forest (preorder) 4 tree(s) ----- 
+    2
+        11
+    5
+        14
+    7
+    8
+        0
+            4
+                6
+                12
+                13
+        1
+            9
+            10
+                3
+------  end  forest (preorder) ----- 
+  Try to make 9 a subtree of 3... Fail  (should fail because 9 isn't a root)
+  Try to make 1 a subree of 1 ... Fail  (should fail because node can't be its own parent)
+------ begin forest (preorder) 4 tree(s) ----- 
+    2
+        11
+    5
+        14
+    7
+    8
+        0
+            4
+                6
+                12
+                13
+        1
+            9
+            10
+                3
+------  end  forest (preorder) ----- 

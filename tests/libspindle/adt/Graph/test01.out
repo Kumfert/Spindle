@@ -1,0 +1,60 @@
+Graph created successfully.
+
+Graph::dump() {
+   className    = Graph
+   classSize    = 88
+   idNumber     = 0
+   currentState = VALID
+   nVtxs        = 9
+   nEdges       = 12
+   nBoundVtxs   = 0
+   nCutEdges    = 0
+   nNonZeros    = 24
+   vtxWeights?  = No
+   edgeWeights? = No
+}
+Graph created successfully.
+
+Graph::dump() {
+   className    = Graph
+   classSize    = 88
+   idNumber     = 1
+   currentState = VALID
+   nVtxs        = 9
+   nEdges       = 12
+   nBoundVtxs   = 0
+   nCutEdges    = 0
+   nNonZeros    = 24
+   vtxWeights?  = Yes
+   edgeWeights? = Yes
+}
+Graph created successfully.
+
+Graph::dump() {
+   className    = Graph
+   classSize    = 88
+   idNumber     = 2
+   currentState = VALID
+   nVtxs        = 9
+   nEdges       = 12
+   nBoundVtxs   = 0
+   nCutEdges    = 0
+   nNonZeros    = 24
+   vtxWeights?  = No
+   edgeWeights? = Yes
+}
+Graph created successfully.
+
+Graph::dump() {
+   className    = Graph
+   classSize    = 88
+   idNumber     = 3
+   currentState = VALID
+   nVtxs        = 9
+   nEdges       = 12
+   nBoundVtxs   = 0
+   nCutEdges    = 0
+   nNonZeros    = 24
+   vtxWeights?  = Yes
+   edgeWeights? = No
+}

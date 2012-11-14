@@ -1,0 +1,137 @@
+::INSTALL.txt
+
+SPINDLE -- Ordering Algorithms for Sparse Matrices
+
+     version Beta 2.4  19 August 1999
+
+	Gary Kumfert, Old Dominion University
+        Copyright(c) 1996-1999, Old Dominion University. 
+
+Send comments, bug fixes, etc. to <kumfert1@llnl.gov>
+
+========================================================================
+
+CONTENTS:
+1. Getting the software
+2. Unpacking the software
+3. Setting the environment
+4. Configuring the software
+5. Building the software
+6. Testing the build
+
+========================================================================
+
+GETTING THE SOFTWARE:
+
+	Currently, the best place to look is
+	http://www.cs.odu.edu/~kumfert/research.html .
+	This may change as I graduate and start work at LLNL.
+
+========================================================================
+
+UNPACKING THE SOFTWARE:
+	
+	From UNIX:
+		Type something akin to `gzip -cd spindle.tar.gz | tar xv'
+	From Windows:
+		Either use Unix equivalents like Cygwin or WinZip. 
+
+========================================================================
+
+SETTING THE ENVIRONMENT:
+
+	To build the software, you must first set a few environment variables.
+	
+	SPINDLE_HOME = absolute path to the topmost directory of the Spindle 
+			installation
+
+	SPINDLE_PLATFORM = must match a subdirectory of $(SPINDLE_HOME)/makes
+			 also used to manage multiple libraries
+
+	SPINDLE_TARGET =  usually "std" for standard.  "petsc" and "matlab" 
+			also can be used, but this may require additional
+			configurations.
+
+ 	OPTIM = specifies 'g' for debugging build, 'O' for optimized, etc.  
+		It is recommeded to start with g.
+
+========================================================================
+
+CONFIGURING THE SOFTWARE:
+
+	Unf. Spindle doesn't come with a configure script, but you may not
+	have to do it by hand either.  First look in the "makes" directory.
+	There are a list of subdirectories that show PROCESSOR-OS-COMPILER
+	triples.  If you find a perfect match, most of the work is done
+	for you.  Otherwise, create a new subdirectory and copy the 
+	files from the closest match you can find.
+
+	Contents of "makes/sparc-solaris-gnu":
+		spindle_config.h  -- platform specific configuration file
+		platform.make   -- platform specific makefile fragment
+		site.make       -- most commonly changed values in makefile 
+					system.
+		optim_g.make    -- sets options for debugging builds
+		optim_O.make    -- sets options for an optimized build
+		optim_pg.make   -- sets options for a profiling build
+		optim_Opg.make  -- sets options for an optimized profiling 
+					build.
+				   (not avialable on all platforms).
+		mexopts.sh      -- shell script for configuring MEX file 
+					creation.
+	
+
+========================================================================
+
+BUILDING THE SOFTWARE:
+
+	Once the environment variables are set, and we have the
+	requisite configuration files in place, there are a few more details
+	before we are ready to attempt a build.
+
+	1. type 'cd $(SPINDLE_HOME); make includes'
+		This will place symbolic links in $(SPINDLE_HOME)/include/spindle
+		to all the other header files in the $(SPINDLE_HOME)/src tree.
+
+	2. edit $(SPINDLE_HOME)/makes/$(SPINDLE_PLATFORM)/spindle_config.h
+		In particular, you may want to edit the #defines for
+		GZIP, PKZIP, and COMPRESS so that they point to the
+		correct binaries.  If you created your own platform, 
+		there are a bewildering array of other #defines that
+		are available.  It is impossible to guarantee that
+		every possible combination will compile correctly, but
+		its worth a try.
+
+	3. Now type 'cd $(SPINDLE_HOME); make '
+
+	If everything works well, then in 
+		$(SPINDLE_HOME)/lib/$(SPINDLE_PLATFORM)/lib$(OPTIM)/ 
+	there will be a	file 
+		libspindle_std.a
+
+========================================================================
+
+TESTING THE BUILD:
+
+	Spindle comes with a collection of test drivers for unit
+	and integration testing.  To run the tests, type
+		'cd $(SPINDLE_HOME); make tests'
+
+	The Makefiles will build all the test drivers, run them, 
+	and then diffs the actual output with the expected output.
+	There is no mechanism to summarize the results, the user
+	must simply pay attention to the results displayed on the
+	screen.
+
+========================================================================
+
+RUNNING EXAMPLES:
+
+	Spindle also comes with example programs that actually perform
+	some useful work.  To build the examples, type
+		cd $(SPINDLE_HOME)
+		make examples
+
+	The most interesting example programs are in 
+		$(SPINDLE_HOME)/src/order/drivers/examples/
+

@@ -1,0 +1,33 @@
+Compressed graph from 21 vertices to 9
+cPerm[0] = 0
+cPerm[1] = 6
+cPerm[2] = 3
+cPerm[3] = 8
+cPerm[4] = 7
+cPerm[5] = 2
+cPerm[6] = 1
+cPerm[7] = 5
+cPerm[8] = 4
+PermutationMap:0 6 3 8 7 2 1 5 4 
+CompressionMap:0 0 1 2 2 0 1 2 3 3 4 5 5 6 7 8 6 6 7 8 8 
+perm[0] = 0
+perm[1] = 1
+perm[2] = 5
+perm[3] = 13
+perm[4] = 16
+perm[5] = 17
+perm[6] = 8
+perm[7] = 9
+perm[8] = 15
+perm[9] = 19
+perm[10] = 20
+perm[11] = 14
+perm[12] = 18
+perm[13] = 3
+perm[14] = 4
+perm[15] = 7
+perm[16] = 2
+perm[17] = 6
+perm[18] = 11
+perm[19] = 12
+perm[20] = 10

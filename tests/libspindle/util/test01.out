@@ -1,0 +1,129 @@
+Testing the adjacency iterators over the graph
+adj(0) :1, 3, 
+adj(1) :0, 2, 4, 
+adj(2) :1, 5, 
+adj(3) :0, 4, 6, 
+adj(4) :1, 3, 5, 7, 
+adj(5) :2, 4, 8, 
+adj(6) :3, 7, 
+adj(7) :4, 6, 8, 
+adj(8) :5, 7, 
+
+Creating the Breadth First Search (BFS) object ...  done. 
+  BFS.nVisited    = 0
+  BFS.nFarthest   = 0
+  BFS.height      = 0
+  BFS.width       = 0
+  BFS.maxDegree   = -1
+  BFS.maxDegreeVtx= -1
+  BFS.minDegree   = -1
+  BFS.minDegreeVtx= -1
+  BFS.new2old = 
+
+Doing BFS from vertex 2 ...  done. 
+  BFS.nVisited    = 9
+  BFS.nFarthest   = 1
+  BFS.height      = 4
+  BFS.width       = 3
+  BFS.maxDegree   = 4
+  BFS.maxDegreeVtx= 4
+  BFS.minDegree   = 2
+  BFS.minDegreeVtx= 2
+  BFS.new2old = 
+            [ 0] = 2,  dist = 0
+            [ 1] = 1,  dist = 1
+            [ 2] = 5,  dist = 1
+            [ 3] = 0,  dist = 2
+            [ 4] = 4,  dist = 2
+            [ 5] = 8,  dist = 2
+            [ 6] = 3,  dist = 3
+            [ 7] = 7,  dist = 3
+            [ 8] = 6,  dist = 4
+
+Doing BFS from vertex 0 with a partition ...  done. 
+  BFS.nVisited    = 3
+  BFS.nFarthest   = 1
+  BFS.height      = 2
+  BFS.width       = 1
+  BFS.maxDegree   = 3
+  BFS.maxDegreeVtx= 1
+  BFS.minDegree   = 2
+  BFS.minDegreeVtx= 0
+  BFS.new2old = 
+            [ 0] = 0,  dist = 0
+            [ 1] = 1,  dist = 1
+            [ 2] = 2,  dist = 2
+
+Doing BFS from vertex 0 with a partition and loose restrictions...  done. 
+  BFS.nVisited    = 6
+  BFS.nFarthest   = 1
+  BFS.height      = 3
+  BFS.width       = 2
+  BFS.maxDegree   = 4
+  BFS.maxDegreeVtx= 4
+  BFS.minDegree   = 2
+  BFS.minDegreeVtx= 0
+  BFS.new2old = 
+            [ 0] = 0,  dist = 0
+            [ 1] = 1,  dist = 1
+            [ 2] = 3,  dist = 1
+            [ 3] = 2,  dist = 2
+            [ 4] = 4,  dist = 2
+            [ 5] = 5,  dist = 3
+
+Doing BFS from vertex 0 with a new partition and loose restrictions...  done. 
+  BFS.nVisited    = 8
+  BFS.nFarthest   = 1
+  BFS.height      = 5
+  BFS.width       = 2
+  BFS.maxDegree   = 4
+  BFS.maxDegreeVtx= 4
+  BFS.minDegree   = 2
+  BFS.minDegreeVtx= 0
+  BFS.new2old = 
+            [ 0] = 0,  dist = 0
+            [ 1] = 1,  dist = 1
+            [ 2] = 3,  dist = 1
+            [ 3] = 2,  dist = 2
+            [ 4] = 4,  dist = 2
+            [ 5] = 5,  dist = 3
+            [ 6] = 8,  dist = 4
+            [ 7] = 7,  dist = 5
+
+Doing BFS from vertex 0 with shortCircuit = 3 ...  done. 
+  BFS.nVisited    = 9
+  BFS.nFarthest   = 1
+  BFS.height      = 4
+  BFS.width       = 3
+  BFS.maxDegree   = 4
+  BFS.maxDegreeVtx= 4
+  BFS.minDegree   = 2
+  BFS.minDegreeVtx= 0
+  BFS.new2old = 
+            [ 0] = 0,  dist = 0
+            [ 1] = 1,  dist = 1
+            [ 2] = 3,  dist = 1
+            [ 3] = 2,  dist = 2
+            [ 4] = 4,  dist = 2
+            [ 5] = 6,  dist = 2
+            [ 6] = 5,  dist = 3
+            [ 7] = 7,  dist = 3
+            [ 8] = 8,  dist = 4
+
+Doing BFS from vertex 0 with shortCircuit = 2 ... short-circuited!
+  BFS.nVisited    = 6
+  BFS.nFarthest   = 3
+  BFS.height      = 2
+  BFS.width       = 3
+  BFS.maxDegree   = 3
+  BFS.maxDegreeVtx= 1
+  BFS.minDegree   = 2
+  BFS.minDegreeVtx= 0
+  BFS.new2old = 
+            [ 0] = 0,  dist = 0
+            [ 1] = 1,  dist = 1
+            [ 2] = 3,  dist = 1
+            [ 3] = 2,  dist = 2
+            [ 4] = 4,  dist = 2
+            [ 5] = 6,  dist = 2
+

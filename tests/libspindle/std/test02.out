@@ -1,0 +1,11 @@
+Is *t1 a kind of SpindleBaseClass ?   NO
+Is *t1 a kind of Test1 ?            YES
+Is *t1 a kind of Test2 ?            NO
+Is *t1 a kind of Exam1 ?            NO
+Test1::someInt = 5
+Is *t2 a kind of SpindleBaseClass ?   NO
+Is *t2 a kind of Test1 ?            NO
+Is *t2 a kind of Test2 ?            YES
+Is *t2 a kind of Exam1 ?            NO
+Test2::someInt = 1
+Test2::anotherInt = 5

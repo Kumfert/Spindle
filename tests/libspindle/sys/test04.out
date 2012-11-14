@@ -1,0 +1,18 @@
+test2.isError() == 0
+After makeError(), test2.isError() == 1
+---------Error Chain-----------
+DerivedOne::makeError()
+Tried to do 2 many things! 
+DerivedTwo::makeError()
+Found something wrong with two
+-------------------------------
+After reset(), test2.isError() == 0
+After reset(), offender->isError() == 0
+After makeError2(), test2.isError() == 1
+---------Error Chain-----------
+DerivedOne::makeError2()
+This is a completely different kind of error
+DerivedTwo::makeError2()
+you get the idea
+-------------------------------
+After reset(), test2.isError() == 0

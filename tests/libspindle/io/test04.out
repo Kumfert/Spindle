@@ -1,0 +1,30 @@
+*** Graph from Harwell-Boeing File ***
+
+Graph::dump() {
+   className    = Graph
+   classSize    = 88
+   idNumber     = 0
+   currentState = VALID
+   nVtxs        = 16
+   nEdges       = 120
+   nBoundVtxs   = 0
+   nCutEdges    = 0
+   nNonZeros    = 240
+   vtxWeights?  = No
+   edgeWeights? = No
+}
+*** Graph from Chaco File ***
+
+Graph::dump() {
+   className    = Graph
+   classSize    = 88
+   idNumber     = 2
+   currentState = VALID
+   nVtxs        = 16
+   nEdges       = 120
+   nBoundVtxs   = 0
+   nCutEdges    = 0
+   nNonZeros    = 240
+   vtxWeights?  = No
+   edgeWeights? = No
+}

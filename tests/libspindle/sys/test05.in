@@ -1,0 +1,13 @@
+# This is an input file to test the OptionDatabase I/O
+# These lines are commented and should not be read in.
+
+
+filein = somedirectory/somefile.extension ; # Spaces are needed between symbols
+fileout = "C:\WINDOWS\My Desktop\I hate spaces in filenames.doc" ;
+list1 = "1 12 14 15 16 982 98234 098234" ;  #This is a single item with spaces 
+list2 = 1 12 14 15 16 982 98234 08234 ;     #This is a list of items
+list3 = "I hope this works"
+         "I haven't tried this before"
+         "One way to find out."
+; 
+"space in option" = ? ;

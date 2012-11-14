@@ -1,0 +1,14 @@
+PersistanceRegistery::dump():  9 items
+                  ChacoFile (50) 0/0---> MatrixFile
+          HarwellBoeingFile (80) 0/0---> MatrixFile
+                  IJValFile (50) 0/0---> MatrixFile
+                 MatrixFile (50) 0/0---> SpindleStdioFile
+           MatrixMarketFile (50) 0/0---> MatrixFile
+             SpindleBaseClass (12) 0/0---> 
+                  SpindleFile (20) 0/0---> SpindleBaseClass
+            SpindlePersistant (16) 0/0---> SpindleBaseClass
+             SpindleStdioFile (20) 0/0---> SpindleFile
+So, what is the parent of "ChacoFile"?...
+	 why, its "MatrixFile".
+And how big is a HarwellBoeingFile object?
+	 why, its 80 bytes.

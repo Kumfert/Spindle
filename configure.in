@@ -1,0 +1,167 @@
+dnl Process this file with autoconf to produce a configure script.
+AC_INIT(libspindle/std/SpindleBaseClass.h)
+AC_CANONICAL_SYSTEM
+AM_INIT_AUTOMAKE(spindle,2.0.0)
+AM_CONFIG_HEADER(spindle_config.h)
+
+AC_ARG_ENABLE(timers, 
+[  --disable-timers        disable internal timers],
+if $with_timers = no; then 
+AC_DEFINE(DISABLE_STOPWATCH,,
+	[define to disable internal timers (see stopwatch.h)])
+fi
+],)
+
+dnl Checks for programs.
+AC_PROG_MAKE_SET
+AC_PROG_CC
+AC_PROG_CPP
+AC_PROG_CXX
+AC_PROG_LN_S
+AC_PROG_RANLIB
+AC_PROG_INSTALL
+AC_PATH_PROG(PERL, perl, , :/bin:/usr/bin:/usr/local/bin)
+AC_PATH_PROG(COMPRESS, compress, , :/bin:/usr/bin:/usr/local/bin)
+AC_PATH_PROG(UNCOMPRESS, uncompress, , :/bin:/usr/bin:/usr/local/bin)
+AC_PATH_PROG(GZIP, gzip, , :/bin:/usr/bin:/usr/local/bin)
+AC_PATH_PROG(GUNZIP, gunzip, , :/bin:/usr/bin:/usr/local/bin)
+AC_PATH_PROG(PKZIP, pkzip, ,  :/bin:/usr/bin:/usr/local/bin)
+AC_PATH_PROG(PKUNZIP, pkunzip, ,  :/bin:/usr/bin:/usr/local/bin)
+AC_PATH_PROG(BZIP, bzip2, , :/bin:/usr/bin:/usr/local/bin)
+AC_PATH_PROG(BUNZIP, bunzip2, ,  :/bin:/usr/bin:/usr/local/bin)
+
+dnl Checks for libraries.
+AC_ARG_WITH(spooles,[  --with-spooles=LIB      absolute path to spooles.a],
+spooleslib=$withval,spooleslib=)
+AC_ARG_WITH(genmmd, [  --with-genmmd=OBJFILE   absolute path to genmmd.o],
+genmmdlib=$withval,genmmdlib=)
+AC_ARG_WITH(amdbar, [  --with-amdbar=OBJFILE   absolute path to amdbar.o],
+amdbarlib=$withval,amdbarlib=)
+if test "x$spooleslib" != x; then
+  OPTIONALSAMPLES="spoolesmmd";
+  OPTIONALINCLUDES=-I`dirname $spooleslib`;
+fi
+if test "x$genmmdlib" != x; then
+  OPTIONALSAMPLES="$OPTIONALSAMPLES liummd";
+  OPTIONALINCLUDES="$OPTIONALINCLUDES -I"`dirname $genmmdlib`;
+fi
+if test "x$amdbarlib" != x; then
+  OPTIONALSAMPLES="$OPTIONALSAMPLES addamd"
+fi
+AC_SUBST(genmmdlib)
+AC_SUBST(spooleslib)
+AC_SUBST(amdbarlib)
+AC_SUBST(OPTIONALSAMPLES)
+AC_SUBST(OPTIONALINCLUDES)
+
+dnl Replace `main' with a function in -lmat:
+dnl AC_CHECK_LIB(mat, main)
+dnl Replace `main' with a function in -lspindle_interface_petsc:
+dnl AC_CHECK_LIB(spindle_interface_petsc, main)
+dnl Replace `main' with a function in -lspindle_mex:
+dnl AC_CHECK_LIB(spindle_mex, main)
+dnl Replace `main' with a function in -lspindle_petsc:
+dnl AC_CHECK_LIB(spindle_petsc, main)
+dnl Replace `main' with a function in -lmx:
+dnl AC_CHECK_LIB(mx, main)
+
+dnl Checks for header files.
+AC_HEADER_STDC
+AC_CHECK_HEADERS(limits.h strings.h unistd.h sys/time.h sys/times.h alloc.h)
+AC_HEADER_DIRENT
+AC_HEADER_TIME
+
+dnl Checks for typedefs, structures, and compiler characteristics.
+AC_C_CONST
+AC_C_INLINE
+AC_TYPE_SIZE_T
+AC_C_BIGENDIAN
+
+LLNL_CXX_OLD_HEADER_SUFFIX
+AC_CXX_HAVE_STD
+AC_CXX_HAVE_STL
+AC_CXX_BOOL
+AC_CXX_CONST_CAST
+AC_CXX_DYNAMIC_CAST
+AC_CXX_REINTERPRET_CAST
+AC_CXX_STATIC_CAST
+AC_CXX_MUTABLE
+AC_CXX_NAMESPACES
+AC_CXX_TYPENAME
+AC_CXX_EXCEPTIONS
+AC_CXX_EXPLICIT
+AC_CXX_ENUM_COMPUTATIONS
+AC_CXX_ENUM_COMPUTATIONS_WITH_CAST
+AC_CXX_HAVE_NUMERIC_LIMITS
+AC_CXX_COMPLEX_MATH_IN_NAMESPACE_STD
+AC_CXX_HAVE_COMPLEX
+AC_CXX_HAVE_COMPLEX_MATH1
+AC_CXX_HAVE_COMPLEX_MATH2
+AC_CXX_HAVE_IEEE_MATH
+AC_CXX_TEMPLATES
+AC_CXX_TEMPLATES_AS_TEMPLATE_ARGUMENTS
+AC_CXX_DEFAULT_TEMPLATE_PARAMETERS
+AC_CXX_TEMPLATE_KEYWORD_QUALIFIER
+AC_CXX_EXPLICIT_TEMPLATE_FUNCTION_QUALIFICATION
+AC_CXX_TEMPLATE_QUALIFIED_BASE_CLASS
+AC_CXX_TEMPLATE_QUALIFIED_RETURN_TYPE
+AC_CXX_MEMBER_TEMPLATES
+AC_CXX_MEMBER_TEMPLATES_OUTSIDE_CLASS
+AC_CXX_TEMPLATE_SCOPED_ARGUMENT_MATCHING
+
+if test "X$ac_cv_path_COMPRESS" != X; then
+AC_DEFINE_UNQUOTED(COMPRESS, "$ac_cv_path_COMPRESS",
+    [define to explicit path to compress binary, if available])
+fi
+if test "X$ac_cv_path_UNCOMPRESS" != X; then
+AC_DEFINE_UNQUOTED(UNCOMPRESS, "$ac_cv_path_UNCOMPRESS",
+    [define to explicit path to uncompress binary, if available])
+fi
+if test "X$ac_cv_path_GZIP" != X; then
+AC_DEFINE_UNQUOTED(GZIP, "$ac_cv_path_GZIP", 
+    [define to explicit path to gzip binary, if available])
+fi
+if test "X$ac_cv_path_GUNZIP" != X; then
+AC_DEFINE_UNQUOTED(GUNZIP,"$ac_cv_path_GUNZIP", 
+    [define to explicit path to gunzip binary, if available])
+fi
+if test "X$ac_cv_path_PKZIP" != X; then 
+AC_DEFINE_UNQUOTED(PKZIP, "$ac_cv_path_PKZIP",  
+    [define to explicit path to pkzip binary, if available])
+fi
+if test "X$ac_cv_path_PKUNZIP" != X; then 
+AC_DEFINE_UNQUOTED(PKUNZIP, "$ac_cv_path_PKUNZIP",  
+    [define to explicit path to pkunzip binary, if available])
+fi
+if test "X$ac_cv_path_BZIP" != X; then 
+AC_DEFINE_UNQUOTED(BZIP2, "$ac_cv_path_BZIP", 
+    [define to explicit path to bzip2 binary, if available])
+fi
+if test "X$ac_cv_path_BUNZIP" != X; then 
+AC_DEFINE_UNQUOTED(BUNZIP2, "$ac_cv_path_BUNZIP",
+    [define to explicit path to bunzip binary2, if available])
+fi
+
+
+dnl Checks for library functions.
+AC_FUNC_VPRINTF
+LLNL_FUNC_DRAND_FORTYEIGHT
+
+echo $ac_n "checking for unlinked headerfiles... $ac_c"
+if test -x $srcdir/include/spindle/SpindleSystem.h; then
+  echo "none (assumed: found $srcdir/include/spindle/SpindleSystem.h)";
+else
+  if $srcdir/makeIncludes.sh --srcdir=$srcdir ; then
+	echo "done"; 
+  else 
+	echo "none";
+  fi
+fi
+
+builddir=`pwd`
+AC_SUBST(builddir)
+
+
+AC_OUTPUT(Makefile libspindle/Makefile libspindle/std/Makefile libspindle/sys/Makefile libspindle/adt/Makefile libspindle/adt/BucketSorter/Makefile libspindle/adt/Forest/Makefile libspindle/adt/Graph/Makefile libspindle/adt/Heap/Makefile libspindle/adt/Map/Makefile libspindle/adt/Matrix/Makefile libspindle/io/Makefile libspindle/util/Makefile libspindle/order/Makefile  
+ tests/Makefile tests/libspindle/Makefile tests/libspindle/std/Makefile tests/libspindle/sys/Makefile tests/libspindle/adt/Makefile tests/libspindle/adt/BucketSorter/Makefile tests/libspindle/adt/Forest/Makefile tests/libspindle/adt/Graph/Makefile tests/libspindle/adt/Heap/Makefile tests/libspindle/adt/Map/Makefile tests/libspindle/adt/Matrix/Makefile tests/libspindle/io/Makefile tests/libspindle/util/Makefile tests/libspindle/order/Makefile sample_apps/Makefile)
+

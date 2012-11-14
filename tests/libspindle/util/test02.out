@@ -1,0 +1,61 @@
+Testing the adjacency iterators over the graph
+adj(0) :1, 3, 
+adj(1) :0, 2, 4, 
+adj(2) :1, 5, 
+adj(3) :0, 4, 6, 
+adj(4) :1, 3, 5, 7, 
+adj(5) :2, 4, 8, 
+adj(6) :3, 7, 
+adj(7) :4, 6, 8, 
+adj(8) :5, 7, 
+
+Creating the Pseudo Diameter objects done. 
+  diam.endpoints  = <-1, -1>
+  diam.diameter   = 0
+  diam.nVisited   = 0
+  diam.nBFS       = 0
+Computing Diam from vertex 0 ...  done. 
+  diam.endpoints  = <0, 8>
+  diam.diameter   = 4
+  diam.nVisited   = 9
+  diam.nBFS       = 2
+Computing Diam from vertex 2 ...  done. 
+  diam.endpoints  = <2, 6>
+  diam.diameter   = 4
+  diam.nVisited   = 9
+  diam.nBFS       = 2
+Computing Diam from vertex 4 ...  done. 
+  diam.endpoints  = <0, 8>
+  diam.diameter   = 4
+  diam.nVisited   = 9
+  diam.nBFS       = 3
+Computing Diam with strict partition restrictions from 0...  done. 
+  diam.endpoints  = <0, 2>
+  diam.diameter   = 2
+  diam.nVisited   = 3
+  diam.nBFS       = 2
+Computing Diam with strict partition restrictions from 4...  done. 
+  diam.endpoints  = <3, 5>
+  diam.diameter   = 2
+  diam.nVisited   = 3
+  diam.nBFS       = 3
+Computing Diam with loose partition restrictions from 0...  done. 
+  diam.endpoints  = <0, 2>
+  diam.diameter   = 3
+  diam.nVisited   = 6
+  diam.nBFS       = 2
+Computing Diam with loose partition restrictions from 4...  done. 
+  diam.endpoints  = <3, 5>
+  diam.diameter   = 3
+  diam.nVisited   = 9
+  diam.nBFS       = 3
+Computing Diam with loose partition restrictions from 0 (using paritionMap2)...  done. 
+  diam.endpoints  = <2, 6>
+  diam.diameter   = 5
+  diam.nVisited   = 8
+  diam.nBFS       = 3
+Computing Diam with loose partition restrictions from 4 (using partitionMap3)...  done. 
+  diam.endpoints  = <0, 8>
+  diam.diameter   = 4
+  diam.nVisited   = 9
+  diam.nBFS       = 3

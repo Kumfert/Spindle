@@ -1,0 +1,68 @@
+Graph created successfully.
+Original Graph
+
+Graph::dump() {
+   className    = Graph
+   classSize    = 88
+   idNumber     = 0
+   currentState = VALID
+   nVtxs        = 9
+   nEdges       = 12
+   nBoundVtxs   = 0
+   nCutEdges    = 0
+   nNonZeros    = 24
+   vtxWeights?  = No
+   edgeWeights? = No
+}
+
+
+Sub Graph
+
+Graph::dump() {
+   className    = Graph
+   classSize    = 88
+   idNumber     = 2
+   currentState = VALID
+   nVtxs        = 4
+   nEdges       = 4
+   nBoundVtxs   = 0
+   nCutEdges    = 0
+   nNonZeros    = 8
+   vtxWeights?  = No
+   edgeWeights? = No
+}
+
+
+Scatter Map
+ scatter[ 0 ] = 0
+ scatter[ 1 ] = 1
+ scatter[ 2 ] = 3
+ scatter[ 3 ] = 4
+
+
+Sub Graph 2
+
+Graph::dump() {
+   className    = Graph
+   classSize    = 88
+   idNumber     = 4
+   currentState = VALID
+   nVtxs        = 4
+   nEdges       = 4
+   nBoundVtxs   = 4
+   nCutEdges    = 2
+   nNonZeros    = 12
+   vtxWeights?  = No
+   edgeWeights? = No
+}
+
+
+Scatter Map 2
+ scatter[ 0 ] = 0
+ scatter[ 1 ] = 1
+ scatter[ 2 ] = 3
+ scatter[ 3 ] = 4
+ scatter[ 4 ] = 2
+ scatter[ 5 ] = 5
+ scatter[ 6 ] = 6
+ scatter[ 7 ] = 7

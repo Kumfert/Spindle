@@ -1,0 +1,72 @@
+Adding option "author"  = "Gary Kumfert"      ? passed.
+Adding option "coauthor" = ""                 ? passed.
+Adding option "parents"  = "Dad"              ? passed.
+Adding option "parents"  = "Mom"              ? passed.
+
+Dumping... {
+author = "Gary Kumfert" ; 
+coauthor = ; 
+parents = Dad Mom ; 
+}
+
+Has option "author" == T  ?         passed.
+Has option "coauthor" == T ?        passed.
+Has option "parents" == T ?         passed.
+Has option "grandparents" == F ?    passed.
+
+Remove option "author" == T ?       passed.
+Remove option "coauthor" == T ?     passed.
+Remove option "parents" == T ?      passed.
+Remove option "grandparents" == F ? passed.
+
+Dumping... {
+}
+
+Loading Commandline Options...    passed.
+Dumping... {
+fin = /home/sparse/matrices/testmat.chac ; 
+fintype = Chaco ; 
+help = priority options "other stuff" ; 
+stats = ; 
+time = 5 ; 
+version = ; 
+}
+
+Writing to file 'junk.txt'...
+Creating db2 from file 'junk.txt'...
+Dumping db2... {
+fin = /home/sparse/matrices/testmat.chac ; 
+fintype = Chaco ; 
+help = priority options "other stuff" ; 
+stats = ; 
+time = 5 ; 
+version = ; 
+}
+
+Adding version information ...    passed.
+Adding time information ...       passed.
+Removing help option ...          passed.
+Dumping... {
+fin = /home/sparse/matrices/testmat.chac ; 
+fintype = Chaco ; 
+stats = ; 
+time = 5 hours ; 
+version = 0187341098741093487 ; 
+}
+
+Opening db with 'test05.in' file...
+Dumping db... {
+filein = somedirectory/somefile.extension ; 
+fileout = "C:\WINDOWS\My Desktop\I hate spaces in filenames.doc" ; 
+list1 = "1 12 14 15 16 982 98234 098234" ; 
+list2 = 1 12 14 15 16 982 98234 08234 ; 
+list3 = "I hope this works" "I haven't tried this before" "One way to find out." ; 
+"space in option" = ? ; 
+}
+
+Test (list2[0] == true)...            passed.
+Test (list2[0] != false)...           passed.
+Test list2[1] cannot evaluate to true of false since it is 12... passed.
+Test (list2[0] == 1)...               passed.
+Test (list2[1] == 12)...              passed.
+Error on read a very large number ... (pass is good) passed.

@@ -1,0 +1,124 @@
+Simple forest of 10 trees 
+------ begin forest (preorder) 10 tree(s) ----- 
+    0
+    1
+    2
+    3
+    4
+    5
+    6
+    7
+    8
+    9
+------  end  forest (preorder) ----- 
+  Make 2 a subtree of 1... Pass
+  Make 4 a subtree of 2... Pass
+  Make 9 a subtree of 7... Pass
+------ begin forest (preorder) 7 tree(s) ----- 
+    0
+    1
+        2
+            4
+    3
+    5
+    6
+    7
+        9
+    8
+------  end  forest (preorder) ----- 
+  Try to make 9 a subtree of 3... Fail  (should fail because 9 isn't a root)
+  Try to make 1 a subree of 1 ... Fail  (should fail because node can't be its own parent)
+------ begin forest (preorder) 7 tree(s) ----- 
+    0
+    1
+        2
+            4
+    3
+    5
+    6
+    7
+        9
+    8
+------  end  forest (preorder) ----- 
+  Make 6 a subtree of 2... Pass
+  Make 8 a subtree of 2... Pass
+  Make 0 a subtree of 2... Pass
+------ begin forest (preorder) 4 tree(s) ----- 
+    1
+        2
+            0
+            8
+            6
+            4
+    3
+    5
+    7
+        9
+------  end  forest (preorder) ----- 
+------ begin forest (postorder) 4 tree(s) ----- 
+            0
+            8
+            6
+            4
+        2
+    1
+    3
+    5
+        9
+    7
+------  end  forest (postorder)----- 
+  Make 5 a subtree of 7... Pass
+  Make 3 a subtree of 2... Pass
+  Make 7 a subtree of 2... Pass
+------ begin forest (preorder) 1 tree(s) ----- 
+    1
+        2
+            7
+                5
+                9
+            3
+            0
+            8
+            6
+            4
+------  end  forest (preorder) ----- 
+------ begin forest (postorder) 1 tree(s) ----- 
+                5
+                9
+            7
+            3
+            0
+            8
+            6
+            4
+        2
+    1
+------  end  forest (postorder)----- 
+  Try to prune new tree at 1... Fail  (should fail because 1 is already a root)
+------ begin forest (preorder) 1 tree(s) ----- 
+    1
+        2
+            7
+                5
+                9
+            3
+            0
+            8
+            6
+            4
+------  end  forest (preorder) ----- 
+  Prune new tree at 7... Pass
+  Prune new tree at 5... Pass
+  Prune new tree at 2... Pass
+------ begin forest (preorder) 4 tree(s) ----- 
+    2
+        3
+        0
+        8
+        6
+        4
+    5
+    7
+        9
+    1
+------  end  forest (preorder) ----- 
